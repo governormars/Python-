@@ -131,4 +131,3 @@ def divideByn(decNumber, base):
     return binString
 
 # print(divideByn(123456789, 16))
-
