@@ -17,7 +17,7 @@ class Node:
         self.data = newdata
 
     def setNext(self, newnext):
-        self.data = newnext
+        self.next = newnext
 
 
 # 无序链表,链表本身不包含任何节点对象，它只保留对于头节点的引用
@@ -77,12 +77,14 @@ class UnorderedList:
 
 mylist = UnorderedList()
 mylist.add(1)
+mylist.add(2)
+mylist.add(3)
 print(mylist.search(1))
 # mylist.add(2)
-# print(mylist.size())
-# print(mylist.isEmpty())
+print(mylist.size())
+print(mylist.isEmpty())
 # print(mylist.head.getData())
-# # mylist.remove(5)
+mylist.remove(2)
 # print(mylist.search(6))
 node1 = Node(5)
 print(node1.getData())
